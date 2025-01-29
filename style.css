@@ -1,0 +1,60 @@
+/* Basic styling for the game to make it look decent! */
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 2em;
+  background-color: #879599; /* background color */
+  color: #420420; /* text color */
+}
+
+/* Giving the heading a fancy look */
+h1 {
+  font-family: verdana, arial, sans-serif;
+  color: #00698f; 
+  font-style: italic;
+}
+
+/* Styling for all buttons – because nobody likes boring buttons */
+button {
+  padding: 10px;
+  border-radius: 10px;  
+}
+
+/* Make the game buttons BIG and SPACIOUS */
+#gameButtonArea > button {
+  height: 200px;
+  width: 200px;
+  margin: 2px;
+}
+
+/* Hides the Stop button when not needed */
+.hidden {
+  display: none;
+}
+
+/* Colors for the game buttons (pastel goodness) */
+#button1 {
+  background-color: lightgreen;
+}
+#button2 {
+  background-color: lightblue;
+}
+#button3 {
+  background-color: lightpink;
+}
+#button4 {
+  background-color: lightyellow;
+}
+
+/* These styles kick in when the button is lit or pressed – ooh, shiny! */
+#button1:active, #button1.lit {
+  background: green;
+}
+#button2:active, #button2.lit {
+  background: blue;
+}
+#button3:active, #button3.lit {
+  background: red;
+}
+#button4:active, #button4.lit {
+  background: yellow;
+}
