@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Light and Sound Game</title>
+  <!-- Linking the style sheet -->
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <h1>Light and Sound Game</h1>
+  <p>Think you can remember the pattern? Prove it by pressing the buttons in the right order!</p>
+  <!-- magical buttons to start and stop the game -->
+  <button id="startBtn" onclick="startGame()">Start</button>
+  <button id="stopBtn" class="hidden" onclick="stopGame()">End</button>
+
+  <!-- The area where the fun happens -->
+  <div id="gameButtonArea">
+    <!-- Four game buttons waiting to be pressed -->
+    <button class="gameButton" id="button1" onmousedown="startTone(1)" onmouseup="stopTone()" onclick="guess(1)"> </button>
+    <button class="gameButton" id="button2" onmousedown="startTone(2)" onmouseup="stopTone()" onclick="guess(2)"> </button>
+    <button class="gameButton" id="button3" onmousedown="startTone(3)" onmouseup="stopTone()" onclick="guess(3)"> </button>
+    <button class="gameButton" id="button4" onmousedown="startTone(4)" onmouseup="stopTone()" onclick="guess(4)"> </button>
+  </div>
+
+  <!-- Linking the script so the game actually works -->
+  <script src="script.js"></script>
+</body>
+</html>
